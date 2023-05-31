@@ -1,0 +1,28 @@
+$(document).ready(function(){
+    $('.food-slider').slick({
+       autoplay:true,
+      slidesToShow:4,
+      slidesToScroll:1,
+      prevArrow:".prev-btn",
+      nextArrow:".next-btn",
+      responsive:[
+         {
+            breakpoint:1000,
+            settings:{
+             slidesToShow:2,
+            }
+         },
+         {
+          breakpoint:768,
+          settings:{
+           slidesToShow:1,
+          }
+       }
+      ]
+ 
+    });
+ 
+    $('.nav-trigger').click(function(){
+       $('.site-content-wrapper').toggleClass('scaled');
+    })
+ });
