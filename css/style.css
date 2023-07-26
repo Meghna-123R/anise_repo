@@ -41,7 +41,11 @@
     src: url(../fonts/Raleway-ThinItalic.ttf);
 }
 
+ ::-webkit-scrollbar {
+    display: none;
+  }
 
+ 
 
 /*colors*/
 
